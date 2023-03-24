@@ -119,9 +119,6 @@ main{
   height: auto;
 }
 
-#myImage{
-  width: 100%;
-}
 
 @media (max-width: 700px) {
   #myImage {
