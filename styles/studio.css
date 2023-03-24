@@ -1,6 +1,4 @@
-html{
-    position: absolute;
-}
+
 
 body {
     background-color: #aaf392;
@@ -11,10 +9,7 @@ body {
     padding: 0px;
 }
 
-main{
-    width: 100%;
-    position: relative;
-}
+
 #navbar{
     background-color: #4fd28a;
     width: 100%;
@@ -27,16 +22,6 @@ main{
     margin: 0px;
 
 }
-
-@media (max-width: 768px) {
-    /* Apply different styles to navbar when viewport is less than 768px */
-    #navbar {
-      position: relative;
-      z-index: 1;
-      width: 100%;
-      padding-bottom: 20px; /* Increase padding to account for lack of fixed position */
-    }
-  }
 
 
 
@@ -129,9 +114,29 @@ main{
     background-size: cover;
 }
 
+
+
+@media (max-width: 700px) {
+  #myImage {
+    display: none;
+  }
+  #myMobileImage {
+    display: block;
+  }
+}
+
+@media (min-width: 701px) {
+  #myImage {
+    display: block;
+  }
+  #myMobileImage {
+    display: none;
+  }
+}
+
 #bottom img{
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 #welcome{

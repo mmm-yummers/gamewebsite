@@ -16,35 +16,36 @@
 	
 	</head>
     <body>
-        
+        <header id="navbar">
+            <div class="topnav">
+
+                <a href="studio.html"><img id="logo" src="simg/logobright.png"></a>
+
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-reddit"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+                </ul>
+
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">News-Blog</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#community-container">Community</a></li>
+                </ul>
+            </nav>
+        </header>
         
         <main>
 
-            <header id="navbar">
-                <div class="topnav">
-    
-                    <a href="studio.html"><img id="logo" src="simg/logobright.png"></a>
-    
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-reddit"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
-                    </ul>
-    
-                </div>
-                
-                <nav>
-                    <ul>
-                        <li><a href="#">News-Blog</a></li>
-                        <li><a href="#careers">Careers</a></li>
-                        <li><a href="#community-container">Community</a></li>
-                    </ul>
-                </nav>
-            </header>
+            
 
             <div class="welcome-container">
                 <div id="bottom">
-                    <img src="images/studio.jpg">
+                    <img id="myImage" src="images/studio.jpg" alt="My Image">
+                    <img id="myMobileImage" src="images/mobilestudio.jpg" alt="My Mobile Image">
                 </div>
                 <div id="bottom">
                     <div id="welcome">
@@ -222,6 +223,18 @@
               }
             }
 
+            var myImage = document.getElementById("myImage");
+            var myMobileImage = document.getElementById("myMobileImage");
+
+            function switchImage() {
+            if (window.innerWidth < 700) {
+                myImage.setAttribute("src", myMobileImage.getAttribute("src"));
+            } else {
+                myImage.setAttribute("src", "images/studio.jpg");
+            }
+            }
+
+            window.addEventListener("resize", switchImage);
             
         </script>
     </body>
