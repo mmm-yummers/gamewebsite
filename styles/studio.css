@@ -1,5 +1,5 @@
 
-
+@media (min-width: 768px){
 body {
     background-color: #aaf392;
     /*background-image: linear-gradient(to bottom, #aaf392, #4fd28a );*/
@@ -119,24 +119,6 @@ main{
   height: auto;
 }
 
-
-@media (max-width: 700px) {
-  #myImage {
-    display: none;
-  }
-  #myMobileImage {
-    display: block;
-  }
-}
-
-@media (min-width: 701px) {
-  #myImage {
-    display: block;
-  }
-  #myMobileImage {
-    display: none;
-  }
-}
 
 
 
@@ -615,4 +597,4 @@ font-family: 'Montserrat', sans-serif;*/
   .pages a:hover{
     color: #f84606;
   }
-  
+}
