@@ -47,21 +47,7 @@
             <div class="welcome-container">
                 <div id="bottom">
                     <img id="myImage" src="images/studio.jpg" alt="My Image">
-                    <img id="myMobileImage" src="images/mobilestudio.jpg" alt="My Mobile Image">
-                    <script>
-                        var myImage = document.getElementById("myImage");
-                        var myMobileImage = document.getElementById("myMobileImage");
-
-                        function switchImage() {
-                        if (window.innerWidth < 700) {
-                            myImage.setAttribute("src", myMobileImage.getAttribute("src"));
-                        } else {
-                            myImage.setAttribute("src", "images/studio.jpg");
-                        }
-                        }
-
-                        window.addEventListener("resize", switchImage);
-                    </script> 
+               
                 </div>
                 <div id="bottom">
                     <div id="welcome">

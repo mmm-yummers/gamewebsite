@@ -20,7 +20,8 @@
 
 
 body{
-    background-color: #250B0D;
+    background-image: url("../images/pinkfor.png");
+    background-size: cover;
     margin: 0;
 
 }
@@ -28,7 +29,7 @@ body{
 header{
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 200px;
 }
 
 .home-header{
@@ -53,7 +54,7 @@ header{
     font-family: 'Tribal Two', sans-serif;
     font-size: 2rem;
     font-weight: 100;
-    color: #ffffff;
+    color: #EBB8B8;
 }
 
 nav{
@@ -69,7 +70,10 @@ nav{
 nav ul{
     float: right;
     width: 70%;
-    background-color: rgba(255, 255, 255, 0.5);
+    
+    background-color: rgba(37, 11, 13,0.5);
+    border: 1px solid #EBB8B8;
+    border-right: none;
     font-family: 'MedievalSharp', cursive;
     font-weight: bold;
     margin: 0px;
@@ -83,7 +87,7 @@ nav ul li{
   margin: 1.5%;
   font-size: 0.9rem;
   padding: 0;
-  color: #250B0D;
+  
     
 }
 
@@ -91,7 +95,7 @@ ul a{
 	display: block;
 	padding: 0;
 	text-decoration: none;
-	color: #250B0D;
+	color: #EBB8B8;
 }
 
 ul a:hover{
@@ -305,6 +309,56 @@ nav img{
   }
 
 /*Merch page*/
+
+#merch-header{
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  height: 80rem;
+  background-image: url("../images/pinkforrest.png");
+  background-size: cover; /*stretches the image*/
+}
+
+#merch-main{
+  position: relative;
+  z-index: 1;
+  margin-top: 300px;
+  padding-bottom: 5%;
+  background-image: linear-gradient(to top, rgb(22, 0, 13),  rgba(85,2,51,1), rgba(85,2,51,0)); 
+}
+
+#merch-intro{
+  width: 100%;
+
+}
+
+#merch-intro p{
+  width: 100%;
+  padding: 5%;
+  padding-left: 12%;
+  padding-right: 12%;
+  margin: 0 auto;
+  color: #EBB8B8;
+  background-color: rgba(37, 11, 13,0.5);
+  font-size: 1.3em;
+  text-align: center;
+  font-family: 'MedievalSharp', cursive;
+  font-family: 'Calisto', serif;
+}
+
+#merch-intro h1{
+  margin: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-image: linear-gradient(to bottom, rgba(235, 184, 184, 0.623), rgba(235, 184, 184, 0));
+  color: #250B0D;
+  height: auto;
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Tribal Two', sans-serif;
+
+}
+
 .product-container{
     display: grid;
     grid-auto-columns: max-content;
@@ -314,43 +368,35 @@ nav img{
     grid-template-columns: repeat(3, 1fr);
     
     
-    margin: 60px auto;
-    max-width: 800px;
+    margin: auto;
+    max-width: 900px;
+    background-color: rgba(37, 11, 13, 0.466);
+    padding: 50px;
+
 }
 
-/*.product {
-
-
-  &__image {
-    background-color: #e5e5e5;
-    display: block;
-    min-height: 200px;
-    width: 100%;
-  }
-  
-  &__name {
-    
-    p {
-      font-family: sans-serif;
-      font-size: 16px;
-      font-weight: bold;
-   
-      a {
-        color: #000000;
-        text-decoration: none;
-      }
-    }
-  }
-  
-  &__price {
-
-    p {
-      font-family: sans-serif;
-      font-size: 14px;
-    }
-  }
+.product{
+  background-color: #EBB8B8;
+  height: auto;
+  padding: 12px;
+  align-items: center;
 }
-*/
+
+.product-image{
+  width: 100%;
+}
+
+.product-name a{
+  padding-left: 5%;
+  text-decoration: none;
+  color: #250B0D;
+}
+
+.product-price p{
+  padding-left: 5%;
+  color: #3f1519;
+}
+
 
 /*explore page*/
 
