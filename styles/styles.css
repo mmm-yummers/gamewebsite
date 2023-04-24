@@ -42,7 +42,7 @@ header{
 }
 
 #about-header{
-  background-image: url("../images/1d0c4dfa8cd7b8efc836b93df0fe427f7d1fe8b7d13b404fe2d9a370bf07b781.jpg");
+  background-image: url("../images/cinematic\ moment.png");
 }
 
 .main-title{
@@ -141,8 +141,8 @@ nav img{
 }
 
 #intro-container{
-  width: 500px;
-  margin-left: 10%;
+  width: 600px;
+  margin-left: 8%;
   padding-bottom: 5%;
   
 }
