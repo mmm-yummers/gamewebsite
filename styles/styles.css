@@ -20,7 +20,7 @@
 
 
 body{
-    background-image: url("../images/pinkfor.png");
+    background-image: url("../images/pinkforrest.png");
     background-size: cover;
     margin: 0;
 
@@ -42,11 +42,12 @@ header{
 }
 
 #about-header{
-  background-image: url("../images/cinematic\ moment.png");
+  background-image: url("../images/castlenight.png");
 }
 
 .main-title{
     padding: 2%;
+    margin-left: 2%;
     float: left;
     width: 40%;
     display: flex;
@@ -141,9 +142,10 @@ nav img{
 }
 
 #intro-container{
-  width: 600px;
+  width: 800px;
   margin-left: 8%;
   padding-bottom: 5%;
+  line-height: 1.3;
   
 }
 
@@ -314,7 +316,7 @@ nav img{
   position: absolute;
   top: 0;
   z-index: 0;
-  height: 80rem;
+  height: 90rem;
   background-image: url("../images/pinkforrest.png");
   background-size: cover; /*stretches the image*/
 }
@@ -329,6 +331,7 @@ nav img{
 
 #merch-intro{
   width: 100%;
+  
 
 }
 
@@ -339,11 +342,11 @@ nav img{
   padding-right: 12%;
   margin: 0 auto;
   color: #EBB8B8;
-  background-color: rgba(37, 11, 13,0.5);
+  background-color: rgba(37, 11, 13, 0.747);
   font-size: 1.3em;
   text-align: center;
   font-family: 'MedievalSharp', cursive;
-  font-family: 'Calisto', serif;
+  line-height: 1.3;
 }
 
 #merch-intro h1{
@@ -376,14 +379,14 @@ nav img{
 }
 
 .product{
-  background-color: #EBB8B8;
+  background-color: #ebb8b869;
   height: auto;
   padding: 12px;
   align-items: center;
 }
 
-.product-image{
-  width: 100%;
+.product img{
+  width: 225px;
 }
 
 .product-name a{
